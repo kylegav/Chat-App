@@ -7,16 +7,19 @@
 
 import SwiftUI
 
-struct Option: Hashable {
-    let title: String
-    let imageName: String
+struct Message: Hashable {
+    let userName: String
+    let isOnline: Bool?
 }
 
 struct ContentView: View {
-    let options: [Option] = [
-        .init(title: "Chat", imageName: "message"),
-        .init(title: "Settings", imageName: "gear"),
-        .init(title: "About", imageName: "info.circle")
+    let options: [Message] = [
+        .init(userName: "Kyle Gavin", isOnline: false),
+        .init(userName: "Gustavo Lopez", isOnline: false),
+        .init(userName: "Joshua Heredia", isOnline: false),
+        .init(userName: "Pride",
+            isOnline: true),
+        .init(userName: "Deaz", isOnline: true),
             ]
 
     var body: some View {
@@ -24,68 +27,30 @@ struct ContentView: View {
             listView(
                 options: options
             )
+                .frame(width: 200)
         }
-        .frame(maxWidth:550, maxHeight:350)
+        .frame(maxWidth:600, maxHeight:350)
     }
 }
 
 struct listView: View {
-    let options: [Option]
+    let options: [Message]
     var body: some View {
         VStack {
             ForEach(options, id: \.self) { option in
                 HStack {
-                    Image(systemName: option.imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 20)
-                    
-                    
-                    Text(option.title)
-
+                    Text(option.userName)
+                        
                     Spacer()
                 }
-                .padding(4)
+                .padding(8)
             }
             Spacer()
         }
         .padding(12)
     }
 }
-struct mainView: View {
-    let cols: [GridItem] = [
-        .init(.flexible()),
-        .init(.flexible()),
-        .init(.flexible())
-        
-        ]
-    let videoImage = Array(1...6).map { "video\($0)"}
-    
-    var body: some View {
-        VStack {
-            Image("header")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-            
-            LazyVGrid(columns: cols) {
-                ForEach(videoImage, id: \.self) {imageName in
-                    VStack {
-                        Image(imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                        Text("This is a Link to Open Group ")
-                            .bold()
-                    }
-        
-                    
-                    
-                }
-            }
-            
-            Spacer()
-        }
-    }
-}
+
 
 
 struct ContentView_Previews: PreviewProvider {
