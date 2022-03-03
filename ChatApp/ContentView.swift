@@ -16,7 +16,10 @@ struct ContentView: View {
     let options: [Message] = [
         .init(userName: "Kyle Gavin", isOnline: false),
         .init(userName: "Gustavo Lopez", isOnline: false),
-        .init(userName: "Joshua Heredia", isOnline: false)
+        .init(userName: "Joshua Heredia", isOnline: false),
+        .init(userName: "Pride",
+            isOnline: true),
+        .init(userName: "Deaz", isOnline: true),
             ]
 
     var body: some View {
