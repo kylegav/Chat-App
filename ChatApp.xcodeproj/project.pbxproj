@@ -19,7 +19,6 @@
 		C59B4ECE27D07629001C15AD /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59B4ECC27D07629001C15AD /* AuthenticationViewController.xib */; };
 		C59B4ED327D07629001C15AD /* UserLogin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C59B4EC527D07629001C15AD /* UserLogin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C59B4F3127D15AC5001C15AD /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59B4F3027D15AC5001C15AD /* NetworkExtension.framework */; platformFilter = maccatalyst; };
-		C59B4F3427D15AC5001C15AD /* AppProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59B4F3327D15AC5001C15AD /* AppProxyProvider.swift */; };
 		C59B4F3927D15AC5001C15AD /* Network.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C59B4F2F27D15AC5001C15AD /* Network.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -89,9 +88,6 @@
 		C59B4ED027D07629001C15AD /* UserLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UserLogin.entitlements; sourceTree = "<group>"; };
 		C59B4F2F27D15AC5001C15AD /* Network.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Network.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59B4F3027D15AC5001C15AD /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
-		C59B4F3327D15AC5001C15AD /* AppProxyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProxyProvider.swift; sourceTree = "<group>"; };
-		C59B4F3527D15AC5001C15AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C59B4F3627D15AC5001C15AD /* Network.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Network.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,9 +216,6 @@
 		C59B4F3227D15AC5001C15AD /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C59B4F3327D15AC5001C15AD /* AppProxyProvider.swift */,
-				C59B4F3527D15AC5001C15AD /* Info.plist */,
-				C59B4F3627D15AC5001C15AD /* Network.entitlements */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -451,7 +444,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C59B4F3427D15AC5001C15AD /* AppProxyProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,7 +722,7 @@
 		C59B4ED527D07629001C15AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UserLogin/UserLogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -756,7 +748,7 @@
 		C59B4ED627D07629001C15AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UserLogin/UserLogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -783,8 +775,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Network/Network.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846UKFDJSH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Network/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Network;
@@ -808,8 +802,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Network/Network.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846UKFDJSH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Network/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Network;
