@@ -1,8 +1,8 @@
 # Chat-App
 Encrypted Messaging Chat App. Group Project for CSCI 330 Computer Networking Course. 
 
-SWIFT OUTLINE 
-Login Screen (not auth based):
+SWIFT OUTLINE : 
+Login Screen (not auth based, local storage):
 -Creates LOCAL user and stores cache
 -Requires simple logon (no auth)
 **NOTE** May implement touch-id (for compatible devices)
