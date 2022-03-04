@@ -14,9 +14,10 @@ struct Option: Hashable {
 
 struct ContentView: View {
     let options: [Option] = [
-        .init(title: "Chat", imageName: "message"),
-        .init(title: "Settings", imageName: "gear"),
-        .init(title: "About", imageName: "info.circle")
+        .init(title: "Kyle Gavin", imageName: "circle.fill"),
+        .init(title: "Gustavo Lopez", imageName: "circle.fill"),
+        .init(title: "Joshua Heredia", imageName: "circle.fill"),
+        .init(title: "Sample Names", imageName: "circle.fill"),
             ]
 
     var body: some View {
@@ -24,66 +25,75 @@ struct ContentView: View {
             listView(
                 options: options
             )
+            mainView()
         }
-        .frame(maxWidth:550, maxHeight:350)
+        .frame(maxWidth:650, maxHeight:350)
     }
 }
 
 struct listView: View {
     let options: [Option]
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             ForEach(options, id: \.self) { option in
-                HStack {
+                HStack(alignment: .center) {
                     Image(systemName: option.imageName)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 20)
+                        .frame(width:6)
                     
                     
                     Text(option.title)
+                    
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width:8)
+        
+                    
+                    Image(systemName: "moon.stars.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width:8)
 
+                    
+                        
+            
+                
                     Spacer()
+                    
+                    
                 }
-                .padding(4)
+                .padding(6)
+                .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(lineWidth: 0.5)
+                    )
             }
             Spacer()
+            
+            HStack(alignment: .bottom) {
+                Image(systemName: "gear")
+                    .frame(width:20, height: 20)
+                Image(systemName: "questionmark.circle")
+                    .frame(width:20, height:20)
+            }
+
+
+            
+            
         }
-        .padding(12)
+        .padding(10)
+        .frame(minWidth:200, minHeight: 350)
+        .frame(maxWidth:200, minHeight: 350)
+
     }
 }
 struct mainView: View {
-    let cols: [GridItem] = [
-        .init(.flexible()),
-        .init(.flexible()),
-        .init(.flexible())
-        
-        ]
-    let videoImage = Array(1...6).map { "video\($0)"}
-    
     var body: some View {
-        VStack {
-            Image("header")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-            
-            LazyVGrid(columns: cols) {
-                ForEach(videoImage, id: \.self) {imageName in
-                    VStack {
-                        Image(imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                        Text("This is a Link to Open Group ")
-                            .bold()
-                    }
-        
-                    
-                    
-                }
-            }
-            
-            Spacer()
-        }
+        Text("Selected Chat will Populate Here")
+            .frame(minWidth:300, minHeight:350)
+            .frame(maxWidth:550, maxHeight:350)
     }
 }
 
