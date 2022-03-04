@@ -10,7 +10,8 @@ Login Screen (not auth based, local storage):
 Main landing Screen:
 -LHS (200px) Displays Local Users Discovered
 -RHS (450px) Displays Chats, if applicable
--BLHS (20px) Settings Icon, UIInteract -> Flows to settings page -> Tapping again minimizes settings
+-BLHS (20px) Settings Icon, UIInteract -> Flows to settings page -> Tapping again minimizes settings.
+-BLHS (20px) Help Icon, UIInteract -> Flows to Help/Info Page -> Tapping agian minimizes settings. 
 
 **NOTE** This app is not meant to be fullscreen, it is hard disabled
 **NOTE** App MAX width/height is 650px * 350px (This can be adjusted as seen fit in ./ContentView.swift
