@@ -1,3 +1,7 @@
+# Weekly Progress 3/6
+## By Kyle Gavin
+Second Item 
+
 # Weekly Progress 2/24
 ## By Kyle Gavin
 Over the weekend I was researching topics regarding p2p networks, their structure, and identifying common strategies for implementation. Originally, I came up with the idea of a hybrid network for file transfer, messaging. etc. that relies on an addressing server to sync clients. While this allows clients to connect without explicitly entering each other's IP addresses, in the case of failure of the addressing system the program would still work properly. After doing a light mock-up test of this type of structure I realized that this wouldn't be feasible. Chat apps by nature are simpler as a client-server model because you send a message to a server and the server has a target user with a UUID. UUIDs are used to identify people uniquely as the possibility of two instances generating the same UUID is extremely low. Anyhow, a peer-to-peer network on LAN works better because this removes the need for a sync server. This ultimately makes the decision to stick to a LAN-based application more logical. With this LAN-based application, we will also be able to use similar protocols to implement a file share (if desired) along with chat.
