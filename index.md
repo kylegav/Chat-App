@@ -51,10 +51,15 @@ Along with the utilities provided natievly with SwiftUI, we also decided to enco
 ### User Interaction Flow Chart
 
 ```mermaid
-graph TD;
-    User Login-->ContentView;
-    
-    
+graph TD
+    A(User Login) --> B[ContentView]
+    B --> C(LHS User List View)
+    B --> D(RHS Chat View)
+    C --> E(Filter)
+    C --> F(Search)
+    D --> G(Send Chat)
+    D --> H(Recieve Chat)
+   
 ```
 
 # Weekly Progress 3/1
