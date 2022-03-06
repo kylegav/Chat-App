@@ -48,6 +48,15 @@ Similarly, you're albe to display chat messages, with send/recieved chats on the
 
 Along with the utilities provided natievly with SwiftUI, we also decided to encorporate SF Symbols which is Apples native symbol library. This Library includes over 3000 symbols and shapes that will allows us to create a clean UI that matches the MacOS scheme. 
 
+### User Interaction Flow Chart
+
+```mermaid
+graph TD;
+    User Login-->ContentView;
+    
+    
+```
+
 # Weekly Progress 3/1
 ## By Deaz Nunoo
 For this week we gave out roles and assigned tasks to each member of our team. It was decided that Kyle, Joshua and Gustavo would be working on the frontend, while me and Pride worked on the backend.
