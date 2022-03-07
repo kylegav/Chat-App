@@ -19,6 +19,7 @@
 		C5B2998627D6BC5A00FD8439 /* Chats+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2998227D6BC5A00FD8439 /* Chats+CoreDataProperties.swift */; };
 		C5B2998727D6BC5A00FD8439 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2998327D6BC5A00FD8439 /* Users+CoreDataClass.swift */; };
 		C5B2998827D6BC5A00FD8439 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2998427D6BC5A00FD8439 /* Users+CoreDataProperties.swift */; };
+		C5B299C627D6C33900FD8439 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B299C527D6C33900FD8439 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		C5B2998227D6BC5A00FD8439 /* Chats+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chats+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C5B2998327D6BC5A00FD8439 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C5B2998427D6BC5A00FD8439 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C5B299C527D6C33900FD8439 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				C5995A4A27CEA0EB00AE9F6D /* ChatAppApp.swift */,
 				C5B2997E27D6BB6500FD8439 /* Model.xcdatamodeld */,
+				C5B299C527D6C33900FD8439 /* Persistence.swift */,
 				C5995A4C27CEA0EB00AE9F6D /* ContentView.swift */,
 				C5995A4E27CEA0EE00AE9F6D /* Assets.xcassets */,
 				C5995A5327CEA0EE00AE9F6D /* ChatApp.entitlements */,
@@ -279,6 +282,7 @@
 				C5B2998627D6BC5A00FD8439 /* Chats+CoreDataProperties.swift in Sources */,
 				C5B2998027D6BB6500FD8439 /* Model.xcdatamodeld in Sources */,
 				C5B2998727D6BC5A00FD8439 /* Users+CoreDataClass.swift in Sources */,
+				C5B299C627D6C33900FD8439 /* Persistence.swift in Sources */,
 				C5B2998827D6BC5A00FD8439 /* Users+CoreDataProperties.swift in Sources */,
 				C5B2998527D6BC5A00FD8439 /* Chats+CoreDataClass.swift in Sources */,
 			);

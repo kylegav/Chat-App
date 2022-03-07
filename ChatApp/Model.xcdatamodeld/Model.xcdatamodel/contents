@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Chats" representedClassName="Chats" parentEntity="Users" syncable="YES">
+        <attribute name="from" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="msg" optional="YES" attributeType="String"/>
-        <attribute name="recieved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="sent" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <relationship name="chatLog" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="userId" inverseEntity="Users"/>
     </entity>
     <entity name="Users" representedClassName="Users" syncable="YES">
@@ -13,7 +12,7 @@
         <relationship name="userId" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chats" inverseName="chatLog" inverseEntity="Chats"/>
     </entity>
     <elements>
-        <element name="Chats" positionX="-9" positionY="36" width="128" height="104"/>
+        <element name="Chats" positionX="-9" positionY="36" width="128" height="89"/>
         <element name="Users" positionX="-9" positionY="36" width="128" height="74"/>
     </elements>
 </model>

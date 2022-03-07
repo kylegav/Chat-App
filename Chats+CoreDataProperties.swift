@@ -16,10 +16,9 @@ extension Chats {
         return NSFetchRequest<Chats>(entityName: "Chats")
     }
 
-    @NSManaged public var sent: Bool
-    @NSManaged public var recieved: Bool
+    @NSManaged public var from: UUID?
     @NSManaged public var msg: String?
-    @NSManaged public var time: Date?
+    @NSManaged public var timestamp: Date?
     @NSManaged public var chatLog: Users?
 
 }
