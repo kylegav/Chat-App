@@ -60,6 +60,8 @@ graph TD;
     D --> G(Send Chat);
     D --> H(Recieve Chat);
    
+   Z(Settings Page) --> Y(TBD Custom Options)
+   W(Info Page) --> V(Discription of Project)
 ```
 
 # Weekly Progress 3/1
