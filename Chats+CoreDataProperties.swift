@@ -16,14 +16,10 @@ extension Chats {
         return NSFetchRequest<Chats>(entityName: "Chats")
     }
 
-    @NSManaged public var msg: String?
     @NSManaged public var sent: Bool
     @NSManaged public var recieved: Bool
+    @NSManaged public var msg: String?
     @NSManaged public var time: Date?
     @NSManaged public var chatLog: Users?
-
-}
-
-extension Chats : Identifiable {
 
 }

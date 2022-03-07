@@ -18,7 +18,7 @@ extension Users {
 
     @NSManaged public var name: String?
     @NSManaged public var uuid: UUID?
-    @NSManaged public var userid: Chats?
+    @NSManaged public var userId: Chats?
 
 }
 

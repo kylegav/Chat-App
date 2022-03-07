@@ -14,11 +14,11 @@
 		C5995A5D27CEA0EE00AE9F6D /* ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5995A5C27CEA0EE00AE9F6D /* ChatAppTests.swift */; };
 		C5995A6727CEA0EE00AE9F6D /* ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5995A6627CEA0EE00AE9F6D /* ChatAppUITests.swift */; };
 		C5995A6927CEA0EE00AE9F6D /* ChatAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5995A6827CEA0EE00AE9F6D /* ChatAppUITestsLaunchTests.swift */; };
-		C5B2997327D5CB4500FD8439 /* appData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5B2997127D5CB4500FD8439 /* appData.xcdatamodeld */; };
-		C5B2997A27D6B9EB00FD8439 /* Chats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2997627D6B9EB00FD8439 /* Chats+CoreDataClass.swift */; };
-		C5B2997B27D6B9EB00FD8439 /* Chats+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2997727D6B9EB00FD8439 /* Chats+CoreDataProperties.swift */; };
-		C5B2997C27D6B9EB00FD8439 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2997827D6B9EB00FD8439 /* Users+CoreDataClass.swift */; };
-		C5B2997D27D6B9EB00FD8439 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2997927D6B9EB00FD8439 /* Users+CoreDataProperties.swift */; };
+		C5B2998027D6BB6500FD8439 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5B2997E27D6BB6500FD8439 /* Model.xcdatamodeld */; };
+		C5B2998527D6BC5A00FD8439 /* Chats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2998127D6BC5A00FD8439 /* Chats+CoreDataClass.swift */; };
+		C5B2998627D6BC5A00FD8439 /* Chats+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2998227D6BC5A00FD8439 /* Chats+CoreDataProperties.swift */; };
+		C5B2998727D6BC5A00FD8439 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2998327D6BC5A00FD8439 /* Users+CoreDataClass.swift */; };
+		C5B2998827D6BC5A00FD8439 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2998427D6BC5A00FD8439 /* Users+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +50,11 @@
 		C5995A6227CEA0EE00AE9F6D /* ChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5995A6627CEA0EE00AE9F6D /* ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITests.swift; sourceTree = "<group>"; };
 		C5995A6827CEA0EE00AE9F6D /* ChatAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C5B2997227D5CB4500FD8439 /* appData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = appData.xcdatamodel; sourceTree = "<group>"; };
-		C5B2997627D6B9EB00FD8439 /* Chats+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Chats+CoreDataClass.swift"; path = "ChatApp/Chats+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C5B2997727D6B9EB00FD8439 /* Chats+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Chats+CoreDataProperties.swift"; path = "ChatApp/Chats+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C5B2997827D6B9EB00FD8439 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataClass.swift"; path = "ChatApp/Users+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C5B2997927D6B9EB00FD8439 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Users+CoreDataProperties.swift"; path = "ChatApp/Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C5B2997F27D6BB6500FD8439 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C5B2998127D6BC5A00FD8439 /* Chats+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chats+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C5B2998227D6BC5A00FD8439 /* Chats+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chats+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C5B2998327D6BC5A00FD8439 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C5B2998427D6BC5A00FD8439 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +85,10 @@
 		C5995A3E27CEA0EB00AE9F6D = {
 			isa = PBXGroup;
 			children = (
-				C5B2997627D6B9EB00FD8439 /* Chats+CoreDataClass.swift */,
-				C5B2997727D6B9EB00FD8439 /* Chats+CoreDataProperties.swift */,
-				C5B2997827D6B9EB00FD8439 /* Users+CoreDataClass.swift */,
-				C5B2997927D6B9EB00FD8439 /* Users+CoreDataProperties.swift */,
+				C5B2998127D6BC5A00FD8439 /* Chats+CoreDataClass.swift */,
+				C5B2998227D6BC5A00FD8439 /* Chats+CoreDataProperties.swift */,
+				C5B2998327D6BC5A00FD8439 /* Users+CoreDataClass.swift */,
+				C5B2998427D6BC5A00FD8439 /* Users+CoreDataProperties.swift */,
 				C5995A4927CEA0EB00AE9F6D /* ChatApp */,
 				C5995A5B27CEA0EE00AE9F6D /* ChatAppTests */,
 				C5995A6527CEA0EE00AE9F6D /* ChatAppUITests */,
@@ -110,11 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				C5995A4A27CEA0EB00AE9F6D /* ChatAppApp.swift */,
+				C5B2997E27D6BB6500FD8439 /* Model.xcdatamodeld */,
 				C5995A4C27CEA0EB00AE9F6D /* ContentView.swift */,
 				C5995A4E27CEA0EE00AE9F6D /* Assets.xcassets */,
 				C5995A5327CEA0EE00AE9F6D /* ChatApp.entitlements */,
 				C5995A5027CEA0EE00AE9F6D /* Preview Content */,
-				C5B2997127D5CB4500FD8439 /* appData.xcdatamodeld */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -276,11 +276,11 @@
 			files = (
 				C5995A4D27CEA0EB00AE9F6D /* ContentView.swift in Sources */,
 				C5995A4B27CEA0EB00AE9F6D /* ChatAppApp.swift in Sources */,
-				C5B2997C27D6B9EB00FD8439 /* Users+CoreDataClass.swift in Sources */,
-				C5B2997327D5CB4500FD8439 /* appData.xcdatamodeld in Sources */,
-				C5B2997D27D6B9EB00FD8439 /* Users+CoreDataProperties.swift in Sources */,
-				C5B2997B27D6B9EB00FD8439 /* Chats+CoreDataProperties.swift in Sources */,
-				C5B2997A27D6B9EB00FD8439 /* Chats+CoreDataClass.swift in Sources */,
+				C5B2998627D6BC5A00FD8439 /* Chats+CoreDataProperties.swift in Sources */,
+				C5B2998027D6BB6500FD8439 /* Model.xcdatamodeld in Sources */,
+				C5B2998727D6BC5A00FD8439 /* Users+CoreDataClass.swift in Sources */,
+				C5B2998827D6BC5A00FD8439 /* Users+CoreDataProperties.swift in Sources */,
+				C5B2998527D6BC5A00FD8439 /* Chats+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,13 +596,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C5B2997127D5CB4500FD8439 /* appData.xcdatamodeld */ = {
+		C5B2997E27D6BB6500FD8439 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C5B2997227D5CB4500FD8439 /* appData.xcdatamodel */,
+				C5B2997F27D6BB6500FD8439 /* Model.xcdatamodel */,
 			);
-			currentVersion = C5B2997227D5CB4500FD8439 /* appData.xcdatamodel */;
-			path = appData.xcdatamodeld;
+			currentVersion = C5B2997F27D6BB6500FD8439 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

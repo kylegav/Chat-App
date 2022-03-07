@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(Chats)
-public class Chats: NSManagedObject {
+public class Chats: Users {
 
 }
