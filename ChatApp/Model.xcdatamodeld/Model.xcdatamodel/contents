@@ -6,7 +6,7 @@
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <relationship name="chatLog" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="userId" inverseEntity="Users"/>
     </entity>
-    <entity name="Users" representedClassName="Users" syncable="YES">
+    <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="userId" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chats" inverseName="chatLog" inverseEntity="Chats"/>

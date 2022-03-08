@@ -23,11 +23,26 @@ struct ContentView: View {
 
 
 struct listView: View {
+    
+    @FetchRequest(sortDescriptors: []) var fetchedUsers: FetchedResults<StoredUsers>
+    
+    @Environment(\.managedObjectContext) var initAdd
+    
+
+    
     var body: some View {
         VStack {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+            
+            List(fetchedUsers) { ident in
+                Text(ident.name ?? "Unknown")
         }
+        Button("Add") {
+            let test = StoredUsers(context: initAdd)
+            test.id = UUID()
+            test.name = "Kyle"
+            }
        
+        }
     }
 }
 struct chatView: View {
