@@ -13,11 +13,18 @@ graph TD;
     A2 --> A11(wait 30mins)
     A11 --> A10
     
-    B(How does a new peer connect with nodes already on the network?)-->B1(Message will be sent to any of the nodes)
-    B1(Message will be sent any of the nodes)-->B2(If node responds, Handshake)
-    B1(Message will be sent any of the node)-->B3(If no, send message to the next node)
-    B2(If node responds, Handshake)-->B4(Share all nodes in database)
-    B4(Share all nodes in database) --> B5(New node now has access to all nodes on the local network)
+    B(How does a new peer connect with nodes already in the database?)
+    B -->B1(loop through network)
+    B1 --> B2(if node is found)
+    B2--> B7(exchange UUID, IPv4, Username,table)
+    B7 --> B3(if node table is empty)
+    B7 --> B4(if node table is not empty)
+    B3 --> B1
+    B4 --> B6(exchange UUID, IPv4, Username with all nodes in table)
+    B6 --> B5(terminate function)
+    B1 --> B9(if not is not found)
+    B9 --> B10(wait 30 mins)
+    B10 --> B1
     
     C(To send a message:) --> C1(Access IPv4 and UUID from database) --> C2(Check if UUID of the peer matches the UUID from the database)-->C3(If UUID is correct, message can be sent)
     -->C5(Send message with acknowledgement)-->C6(Did message get lost or timeout?)-->C7(Prompt the user to resend it)-->C8(nothing happens if the user ignores)
