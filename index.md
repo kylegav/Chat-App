@@ -1,3 +1,8 @@
+# Weekly Progress 3/14
+## By Pride Mbabit
+During our meeting for this week, we discussed the network scanner article kyle found. Which made us take a step back and reconsider how to outline node syncing,updating, discovering and deleting in a more technical manner that is easy to understand and implement. We then edited and finalized the node discorvery function flowchart so everyone understands how the rest of the functions should flow. Since we now understood how technically we need to be in terms of the flow chart, each person chose a function he will work on and complete by our next meeting. Each person also updated the backlog with their to-do task. In that same meeting, Kyle helped us visualize the connectivity of peers and how they will go about sending and receiving messages. For our next meeting next week, we will revise everyone’s flowchart and correct it if need be.
+
+
 # SwiftUI Features, and Architecture 3/6
 ## By Kyle Gavin 
 
@@ -80,5 +85,6 @@ Anyhow, a peer-to-peer network on LAN works better because this removes the need
 
 # Problem Statement 
 Users at Delaware State University need an alternative to GroupMe for class group chats. This is because GroupMe does not provide end-to-end encryption, therefore making it insecure.
+
 
 
