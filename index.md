@@ -1,3 +1,11 @@
+# Weekly Progress 4/12
+## By Deaz Nunoo
+During our meeting with Dr.Rasamny we were shown the many flaws of our diagram. The biggest issue at hand is how vague all of the wording is within our diagram. Pharases like "loop through network" have to be specified much more. We need to talk about the specifics of what we need to do, also we need a better way of doing things such as connecting a new peer to an exisiting peer. Questions to consider are "How will peers connect?", "How will nodes be discovered?" and "how will a database be implemented?".
+
+# Weekly Progress 4/5
+## By Deaz Nunoo
+For this week we made a sequence diagram out of our orginal diagram. This was made to visualize how everythuing would function, and connect to one another. We soon began to realize that there were flaws within our diagram, and that it was not ready to even be transffered over to a sequence diagram. We then added a section in our diagram that would handle message sending, which is a main function for our application. 
+
 # Weekly Progress 3/14
 ## By Pride Mbabit
 During our meeting for this week, we discussed the network scanner article kyle found. Which made us take a step back and reconsider how to outline node syncing,updating, discovering and deleting in a more technical manner that is easy to understand and implement. We then edited and finalized the node discorvery function flowchart so everyone understands how the rest of the functions should flow. Since we now understood how technically we need to be in terms of the flow chart, each person chose a function he will work on and complete by our next meeting. Each person also updated the backlog with their to-do task. In that same meeting, Kyle helped us visualize the connectivity of peers and how they will go about sending and receiving messages. For our next meeting next week, we will revise everyone’s flowchart and correct it if need be.
