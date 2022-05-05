@@ -1,3 +1,14 @@
+# Weekly Progress 4/26
+## By Kyle Gavin
+For the last week, I have been testing different variations of multicasting protocol and have delegated the broadcasting protocol tests to the rest of the team. Multicasting seems to have a temperamental nature, and the architecture requires a series of try/except wrapping with protocol tests on runtime to ensure that it is properly functioning. For unknown reasons, transmissions hang unexpectedly, or peers do not receive multicast transmissions. The number of erroneous errors or unexpected behaviors has caused me to discover more robust forms of coding that provide alternate solutions given any set of errors. 
+
+
+
+# Weekly Progress 4/19
+## By Kyle Gavin
+For this week, we completed diagraming and started to prototype our product's final versions, which involves a broadcast or multicast protocol that elects a peer as a delegate for managing connections. Due to time constraints, we are prototyping two protocols in parallel (parallel sprints) to see which protocol we can successfully implement. The group has suffered from a lack of research throughout our sprints, so we have experienced many different iterations of which strategy is most efficient. Each peer subscribes to a multicasting IP and port that relays each join/leave message with the entire group for the multicasting protocol. While multicasting is more difficult to execute correctly, it is more efficient than broadcast. The alternative Broadcasting protocol elects a peer that listens for join and exit messages and broadcasts the changes as needed. This broadcasting system is less efficient because it becomes more expensive as n users increase to the point where it has the potential to slow down the network. 
+
+
 # Weekly Progress 4/12
 ## By Deaz Nunoo
 During our meeting with Dr.Rasamny we were shown the many flaws of our diagram. The biggest issue at hand is how vague all of the wording is within our diagram. Pharases like "loop through network" have to be specified much more. We need to talk about the specifics of what we need to do, also we need a better way of doing things such as connecting a new peer to an exisiting peer. Questions to consider are "How will peers connect?", "How will nodes be discovered?" and "how will a database be implemented?".
@@ -60,6 +71,8 @@ struct listView: View {
 Similarly, you're able to display chat messages with send/received chats on the respective side using the .allignment methods. With these features combined, I completed various successful test builds that display sudo data. 
 
 Along with the utilities provided natively with SwiftUI, we also decided to incorporate SF Symbols which is Apple's native symbol library. This library includes over 3000 symbols and shapes that will allow us to create a clean UI that matches the MacOS scheme. 
+
+One utility that is not accessible to me under my apple development licence is bonjour api's local network multicasting protocol. Instead of using this, we will be using python scripts to access the local network in a similar fashion. 
 
 ### User Interaction Flow Chart
 
